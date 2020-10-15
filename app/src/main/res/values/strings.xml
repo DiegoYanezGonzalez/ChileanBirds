@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Chilean Birds</string>
+    <string name="volver_a_lista" />
 </resources>

@@ -1,6 +1,7 @@
 package com.example.chileanbirds.bird.network
 
-import com.example.chileanbirds.bird.data.AvesApi
+import com.example.chileanbirds.bird.detalle.data.DetalleAveApi
+import com.example.chileanbirds.bird.lista.domain.data.AvesApi
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -27,7 +28,7 @@ object RetrofitHandler {
     fun getAveApi() : AvesApi {
         return getRetrofit().create(AvesApi::class.java)
     }
-    /*fun getDetalleApi():DetalleAveApi{
+    fun getDetalleApi(): DetalleAveApi {
         return getRetrofit().create(DetalleAveApi::class.java)
-    }*/
+    }
 }

@@ -5,6 +5,14 @@
 
     <fragment
         android:id="@+id/avesFragment"
-        android:name="com.example.chileanbirds.bird.ui.AvesFragment"
-        android:label="AvesFragment" />
+        android:name="com.example.chileanbirds.bird.lista.domain.ui.AvesFragment"
+        android:label="AvesFragment" >
+        <action
+            android:id="@+id/action_avesFragment_to_detalleAvesFragment"
+            app:destination="@id/detalleAvesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleAvesFragment"
+        android:name="com.example.chileanbirds.bird.detalle.presentation.DetalleAvesFragment"
+        android:label="DetalleAvesFragment" />
 </navigation>
